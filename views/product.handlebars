@@ -12,9 +12,9 @@
 <main>
   <section id="product-container">
     <!-- replace with product image and name -->
-    <img src={{product.image}} alt={{product.name}}/>
+    <img src=("/images/" + "{{product.image}}") alt="{{product.name}}"/>
     <!-- replace form action id # with product id -->
-      <form method="POST" action="/api/cart?inventoryId=" + {{product.id}}>
+      <form method="POST" action=("/api/cart?inventoryId=" + "{{product.id}}")>
         <!-- replace with product name -->
         <h2>{{product.name}}</h2>
         <!-- replace with product description -->
@@ -30,7 +30,7 @@
             type="number"
             min="1"
             value="1"
-            max={{product.quantity}} />
+            max="{{product.quantity}}" />
         </label>
         <button>Add to Cart</button>
       </form>
