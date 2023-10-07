@@ -15,10 +15,10 @@
 <!-- TODO: 👇Use a handlebars each helper to loop over inventory items👇 -->
     {{#each rows}}
       <!-- replace with product id -->
-      <a href="{{this.id}}" class="sale-item">
+      <a href="/product/{{this.id}}" class="sale-item">
         <div class="item-img-container">
           <!-- replace with product image and name -->
-          <img src=("/images/" + "{{this.image}}") alt="{{this.name}}" />
+          <img src="images/{{this.image}}" alt="{{this.name}}" />
           <!-- replace with product description -->
           <p>{{this.description}}</p>
         </div> 
